@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(2, 44, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.main_box
+{
+    width: 280px;
+    height: 450px;
+    background-color: white;
+    border-radius: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow: hidden;
+    transform: scale(1.2); 
+}
+.head
+{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+    /* color: rgb(72, 103, 243); */
+    color: black;
+    /* border-bottom: 1px solid rgb(72, 103, 243); */
+}
+
+.head .cont
+{
+    width: 55%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    /* border: 1px solid rgb(241, 212, 212); */
+    border-radius: 30px;
+    /* overflow: hidden; */
+    position: relative;
+    transform: scale(0.8);
+}
+.head .cont .back_col
+{
+    width: 80px;
+    height: 100%;
+    border-radius: 35px;
+    background-color:rgb(72, 103, 243); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.head .log_in,.head .sign_in
+{
+    width: 70px;
+    height: 30px;
+    /* background-color: rgb(72, 103, 243); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    /* margin-right: 10px; */
+    color: white;
+    /* color: rgb(72, 103, 243); */
+
+}
+.head .sign_in
+{
+    color: rgb(72, 103, 243);
+    background-color: transparent;
+    /* margin-right: 10px; */
+}
+
+.log_box{
+    width:200%;
+    height: 85%;
+    /* background-color: red; */
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    /* overflow: hidden; */
+    /* transform: scale(1.2); */
+    /* transform: translateX(-50%); */
+
+}
+
+.log_box .log_in_sec
+{
+    width: 50%;
+    height: 100%;
+    /* background-color: pink; */
+    /* display: none; */
+    /* transition: 0.5s ease-in-out; */
+}
+.log_box form
+{
+    width: 100%;
+    height: 53%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.log_box form .forgot_sec
+{
+    width: 100%;
+    height: 20px;
+    font-size: 11px;
+    text-transform: capitalize;
+    padding-right: 25px;
+    text-align: right;
+    margin-top: 10px;
+    /* background-color: orange; */
+}
+.log_box form .forgot_sec a{
+    text-decoration: none;
+    color: rgb(139, 139, 138);
+}
+.log_box form .input_sec
+{
+    width: 80%;
+    height: 50px;
+    /* background-color: antiquewhite; */
+    border-bottom:1px solid rgb(139, 139, 138) ;
+    margin-top: 30px;
+}
+.log_box form .input_sec .input_name
+{
+    font-size: 10px;
+    color: rgb(128, 129, 125);
+    margin-bottom: 10px;
+}
+.log_box form .input_sec .input_box
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.log_box form .input_sec .input_box .fas
+{
+    color: rgb(112, 112, 112);
+    font-size: 12px;
+}
+.log_box form .input_sec .input_box input{
+    width: 100%;
+    height: 20PX;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    color: rgb(139, 139, 138);
+
+}
+.log_box form .input_sec .input_box input::placeholder
+{
+    color: rgb(139, 139, 138);
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.log_box form .submit{
+    width: 80px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(72, 103, 243);
+    color: white;
+    outline: none;
+    margin-top: 20px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.log_box .sign_up
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: orange; */
+}
+.log_box .sign_up .sign_in_head
+{
+    width: 70%;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 216, 210);
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.log_box .sign_up .sign_in_head .title
+{
+    font-size: 10px;
+    width: 80px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(139, 139, 138);
+    background-color: white;
+}
+.log_box .sign_up .sign_in_icon
+{
+    width:100px ;
+    height: 40px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.log_box .sign_up .sign_in_icon .icon_box
+{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(72, 103, 243);
+    border-radius: 30px;
+}
+.log_box .sign_up .sign_in_icon .icon_box:nth-child(2)
+{
+    background-color: rgb(236, 74, 128);
+}
+.log_box .sign_up .sign_in_icon .icon_box:nth-child(3)
+{
+    background-color: rgb(236, 93, 74);
+}
+.log_box .sign_up .sign_in_icon .icon_box .fab{
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.log_box .sign_in_sec
+{
+    width: 50%;   
+    height: 100%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.log_box .sign_in_sec .sign_in_box
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.log_box .sign_in_sec .sign_in_box form .input_name{
+    /* display: none; */
+    text-transform: capitalize;
+}
+.log_box .sign_in_sec .sign_in_box form .submit
+{
+    margin-top: 50px;
+}
